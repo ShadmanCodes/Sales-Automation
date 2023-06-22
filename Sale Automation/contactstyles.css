@@ -1,0 +1,130 @@
+header{
+    background-color:rgb(199, 199, 37) ;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+    
+    }
+    header h1{
+        color: white;
+        border:4px solid white;
+        padding: 2px 4px;
+        display: inline-block;
+        border-radius: 40px;
+    }
+    .banner{
+        position:relative;
+    }
+    .banner img{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+ 
+    nav{
+        background-color:#f4f4f4;
+        padding: 20px;
+        position: sticky;
+        top: 100px;
+    }
+    nav ul{
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+    nav li{
+        width: 35%;
+        display: inline-block;
+        font-size: 24px;
+    }
+    nav li a{
+        text-decoration: none;
+        color:rgb(11, 96, 109)
+    }
+    nav li a.join{
+        color:rgb(199, 199, 37);
+    }
+    main{
+        max-width: 100%;
+        width: 1200px;
+        margin: 80px auto; 
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+    
+    article h2{
+        color:rgb(18, 98, 110);
+        font-size: 30px;
+    }
+    article p{
+        line-height: 2em;
+        color:#4b4b4b;
+        font-size: 20px;
+    }
+
+    footer{
+        background: rgb(199, 199, 37);
+        color: white;
+        padding: 10px;
+        text-align: center;
+    
+    }
+
+    /* hover */
+    nav li a:hover{
+        text-decoration: underline;
+    }
+    .images li:hover{
+        position: relative;
+        top: 4px;
+    }
+    
+    /*responsive for phone*/
+
+    
+@media screen and (max-width: 960px){
+    .banner .welcome h2{
+       
+     font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .banner .welcome {
+       
+     position: relative;
+     text-align: center;
+     padding: 10px;
+
+    }
+
+    .banner .welcome br{
+       
+      display: none;
+   
+       }
+
+       .banner .welcome h2{
+       
+        font-size: 25px;
+       }
+
+       @media screen and (max-width:560px) {
+        nav li{
+            font-size: 20px;
+            display: block;
+            width: 100%;
+            margin: 12 px 0;
+        }
+        header{
+            position:relative;
+        }
+        nav{
+            top: 0;
+        }
+       }
+}
